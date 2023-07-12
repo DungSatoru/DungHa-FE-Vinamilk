@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #0213b0;
+    /* --primary-color: #f7a6b9; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffff1;
+
+}
+
+.app {
+    min-height: 100vh;
+    margin: auto;
+    max-width: 665px;
+    align-items: center;
+}
+
+img {
+    margin: auto;
+
+}
+
+.heading {
+    font-family: "VNM Sans Display Bold";
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-color);
+    line-height: 80px;
+}
+input {
+    background-color: transparent;
+}
+input:focus {
+    outline: 1px solid var(--primary-color);
+
+}
+.show {
+    display: none;
+    background-color: var(--primary-color);
+    width: fit-content;
+    height: fit-content;
+    aspect-ratio: 1/1;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    min-height: 400px;
+    min-width: 400px;
+    padding: 100px;
+}
+
+.name,
+.est,
+.since {
+    text-transform: uppercase;
+    font-family: "VNM Sans Display Bold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 100px;
+    margin: 0;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+.est,
+.since {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.form-message {
+    color: #bbb;
+    font-size: 0.8rem;
+    margin-left: 20px;
+}
+
+.form-message.inValid {
+    color: red;
+}
+
+#Submit {
+    opacity: 0.5;
+    cursor: default;
+}
+
+#Submit.active {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#saveButton {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .heading {
+        margin-top: 50px;
+        font-size: 60px;
+        line-height: 50px;
+    }
+    .form-message {
+        font-size: 10px;
+    }
+    .show {
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        min-height: 200px;
+        min-width: 200px;
+        padding: 50px;
+    }
+
+    .name,
+    .est,
+    .since {
+        font-size: 50px;
+        line-height: 40px;
+    }
+
+    .est,
+    .since {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .copy-right {
+        font-size: 10px;
+    }
+
+    .Bottom-wrapper {
+        border-top: 5px dashed #fff !important;
+        padding: 10px 0;
+    }
+}
+
+
+@font-face {
+    font-family: 'VNM Sans Display Bold';
+    src: url('../font/VNMSansDisplay/VNM_Sans_Display_Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VNM Sans Display Regular';
+    src: url('../font/VNMSansDisplay/VNM_Sans_Display_Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VNM Sans Std';
+    src: url('../font/VNMSansDisplay/VNM_Sans_Std.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
