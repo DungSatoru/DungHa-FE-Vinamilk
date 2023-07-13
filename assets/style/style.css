@@ -1,6 +1,10 @@
 :root {
-    --primary-color: #0213b0;
-    /* --primary-color: #f7a6b9; */
+    /* --primary-color: #0213b0;
+    --secondary-color: #fffff1;
+    --text-color: #000; */
+    --primary-color: #f7a6b9;
+    --secondary-color: #000;
+    --text-color: #fff;
 }
 
 * {
@@ -10,7 +14,7 @@
 }
 
 body {
-    background-color: #fffff1;
+    background-color: var(--secondary-color);
 
 }
 
@@ -36,6 +40,7 @@ img {
 }
 input {
     background-color: transparent;
+    color: var(--text-color);
 }
 input:focus {
     outline: 1px solid var(--primary-color);
