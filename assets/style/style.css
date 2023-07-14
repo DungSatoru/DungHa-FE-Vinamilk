@@ -2,9 +2,9 @@
     --primary-color: #0213b0;
     --secondary-color: #fffff1;
     --text-color: #000;
-    --primary-color: #f7a6b9;
+    /* --primary-color: #f7a6b9;
     --secondary-color: #000;
-    --text-color: #fff;
+    --text-color: #fff; */
 }
 
 * {
@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    min-height: 100vh;
+    min-height: calc(100vh - 78px);
     margin: auto;
     max-width: 665px;
 }
@@ -101,10 +101,10 @@ input:focus {
 
 #saveButton {
     display: none;
+    margin-bottom: 400px;
 }
 
 footer {
-    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
